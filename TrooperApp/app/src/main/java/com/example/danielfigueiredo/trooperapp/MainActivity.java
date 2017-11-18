@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements TrooperAdapter.On
     public void onItemClick(Trooper trooper) {
         Intent intent = new Intent(this, TrooperDetailActivity.class);
         intent.putExtra(Constants.TROOPER_EXTRA, trooper);
+        startActivity(intent);
     }
 
     @Override

@@ -11,7 +11,7 @@
         android:id="@+id/toolbar_people"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/toolbar_background">
+        android:background="@color/colorPrimary">
         <TextView
             android:text="Troopers"
             android:textSize="20dp"

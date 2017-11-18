@@ -3,8 +3,11 @@ package com.example.danielfigueiredo.trooperapp;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.danielfigueiredo.trooperapp.Adapter.TrooperAdapter;
 import com.example.danielfigueiredo.trooperapp.Model.Tropper.Trooper;
@@ -50,5 +53,22 @@ public class TrooperDetailActivity extends AppCompatActivity implements TrooperA
     @Override
     public void onItemClick(Trooper trooper) {
         return;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.trooper_detail_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.star_item:
+                Toast.makeText(this, "Favoritar Trooper", Toast.LENGTH_SHORT).show();
+            default:
+                super.onOptionsItemSelected(item);
+        }
+        return true;
     }
 }
