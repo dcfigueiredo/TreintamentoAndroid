@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <TextView
+        android:id="@+id/trooper_name"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:text="SpaceTrooper"
+        android:textSize="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/trooper_aff_imv"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignEnd="@id/trooper_name"
+        android:src="@drawable/first_order"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+    <View android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/separator_color"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/separator"/>
+</RelativeLayout>

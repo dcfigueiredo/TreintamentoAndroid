@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TrooperApp</string>
+    <string name="exluir_title">Excluir Trooper</string>
+    <string name="excluir_message">Tem certeza que deseja excluir este trooper?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="excluido">Trooper Excluído</string>
+</resources>
